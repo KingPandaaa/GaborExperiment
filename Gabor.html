@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button.right {
+            float: right;
+        }
+    </style>
+    <body onload="hideGabors()">
+        <h1 id="directions">Directions: Determine whether the patch is rotating clockwise or counter-clockwise. Base your decision off of the previous patch.</h1>
+        <h2 id="head2">Press button to continue</h2>
+        <script src="change.js"></script>
+        <script> function hideGabors() {
+            document.getElementById("clearGabor2").style.display = "none";
+            document.getElementById("clearGabor3").style.display = "none";
+            document.getElementById("clearGabor4").style.display = "none";
+            document.getElementById("clearGabor5").style.display = "none";
+            document.getElementById("ccw").style.display = "none";
+            document.getElementById("cw").style.display = "none";
+            document.getElementById("finalScore").style.display = "none";
+        }
+        </script>
+        <button id="showGabor1" onclick="button1()">Continue</button>
+        <button id="ccw" onclick="counterclockwise()">Counter-clockwise</button>
+        <button id="cw" class="right" onclick="clockwise()">Clockwise</button>
+        <img class="center" src="C:\Users\Owner\Downloads\clearGabor1.png" id="clearGabor1">
+        <img class="center" src="C:\Users\Owner\Downloads\clearGabor-25.png" id="clearGabor2">
+        <img class="center" src="C:\Users\Owner\Downloads\clearGabor35.png" id="clearGabor3">
+        <img class="center" src="C:\Users\Owner\Downloads\clearGabor75.png" id="clearGabor4">
+        <img class="center" src="C:\Users\Owner\Downloads\clearGabor15.png" id="clearGabor5">
+        <h1 class="center" id="finalScore"></h1>
+    </body>
+</html>

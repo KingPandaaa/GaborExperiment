@@ -14,19 +14,12 @@ function button1() {
   }
 
 function clockwise() {
-    switch(gab){
-        case 2:
-            correct++;
-        case 5:
-            correct++;
-        case 6:
-            correct++;
-        case 8:
-            correct++;
-        
+    if(gab == 2 || gab == 5 || gab == 6 || gab == 10) {
+        correct = correct + 1;
+    }
     document.getElementById("clearGabor" + gab).style.display = "none";
     gab = gab + 1;
-    if(gab == 11) {
+    if(gab >= 6) {
         endExperiment();
     }
     else {
@@ -35,20 +28,12 @@ function clockwise() {
 }
 
 function counterclockwise() {
-    switch(gab){
-        case 3:
-            correct++;
-        case 4:
-            correct++;
-        case 7:
-            correct++;
-        case 8:
-            correct++;
-        case 9:
-            correct++;
+    if(gab == 3 || gab == 4 || gab == 7 || gab == 8 || gab == 9) {
+        correct = correct + 1;
+    }
     document.getElementById("clearGabor" + gab).style.display = "none";
     gab = gab + 1;
-    if(gab == 11) {
+    if(gab >= 6) {
         endExperiment();
     }
     else {

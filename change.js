@@ -47,5 +47,5 @@ function endExperiment() {
     document.getElementById("ccw").style.display = "none";
     document.getElementById("directions").style.display = "none";
     document.getElementById("finalScore").style.display = "block";
-    document.getElementById("finalScore").innerHTML = "You got " + correct/(gab-2)*100 + "% correct";
+    document.getElementById("finalScore").innerHTML = "You got " + (correct/2)*100 + "% correct";
 }

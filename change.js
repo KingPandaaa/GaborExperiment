@@ -14,7 +14,7 @@ function button1() {
   }
 
 function clockwise() {
-    if(gab == 2 || gab == 5 || gab == 6 || gab == 10 || gab == 11) {
+    if(gab == 2 || gab == 5 || gab == 7 || gab == 9 || gab == 10) {
         correct = correct + 1;
     }
     document.getElementById("clearGabor" + gab).style.display = "none";
@@ -28,7 +28,7 @@ function clockwise() {
 }
 
 function counterclockwise() {
-    if(gab == 3 || gab == 4 || gab == 7 || gab == 8 || gab == 9) {
+    if(gab == 3 || gab == 4 || gab == 6 || gab == 8) {
         correct = correct + 1;
     }
     document.getElementById("clearGabor" + gab).style.display = "none";
@@ -47,5 +47,5 @@ function endExperiment() {
     document.getElementById("ccw").style.display = "none";
     document.getElementById("directions").style.display = "none";
     document.getElementById("finalScore").style.display = "block";
-    document.getElementById("finalScore").innerHTML = "You got " + (correct/2)*100 + "% correct";
+    document.getElementById("finalScore").innerHTML = "You got " + (correct/9)*100 + "% correct";
 }

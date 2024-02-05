@@ -19,7 +19,7 @@ function clockwise() {
     }
     document.getElementById("clearGabor" + gab).style.display = "none";
     gab = gab + 1;
-    if(gab >= 6) {
+    if(gab >= 11) {
         endExperiment();
     }
     else {
@@ -33,7 +33,7 @@ function counterclockwise() {
     }
     document.getElementById("clearGabor" + gab).style.display = "none";
     gab = gab + 1;
-    if(gab >= 6) {
+    if(gab >= 11) {
         endExperiment();
     }
     else {

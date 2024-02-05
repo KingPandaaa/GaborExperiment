@@ -26,7 +26,7 @@ function clockwise() {
         
     document.getElementById("clearGabor" + gab).style.display = "none";
     gab = gab + 1;
-    if(gab >= 11) {
+    if(gab == 11) {
         endExperiment();
     }
     else {
@@ -48,7 +48,7 @@ function counterclockwise() {
             correct++;
     document.getElementById("clearGabor" + gab).style.display = "none";
     gab = gab + 1;
-    if(gab >= 11) {
+    if(gab == 11) {
         endExperiment();
     }
     else {

@@ -14,7 +14,7 @@ function button1() {
   }
 
 function clockwise() {
-    if(gab == 2 || gab == 5 || gab == 6 || gab == 10) {
+    if(gab == 2 || gab == 5 || gab == 6 || gab == 10 || gab == 11) {
         correct = correct + 1;
     }
     document.getElementById("clearGabor" + gab).style.display = "none";

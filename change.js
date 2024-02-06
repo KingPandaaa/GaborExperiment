@@ -14,12 +14,12 @@ function button1() {
   }
 
 function clockwise() {
-    if(gab == 2 || gab == 5 || gab == 7 || gab == 9 || gab == 10) {
+    if(gab == 2 || gab == 5 || gab == 7 || gab == 9 || gab == 10 || gab == 13 || gab == 14 || gab == 15 || gab == 19 || gab == 21 || gab == 22 || gab == 23 || gab == 24) {
         correct = correct + 1;
     }
     document.getElementById("clearGabor" + gab).style.display = "none";
     gab = gab + 1;
-    if(gab >= 11) {
+    if(gab >= 26) {
         endExperiment();
     }
     else {
@@ -28,12 +28,12 @@ function clockwise() {
 }
 
 function counterclockwise() {
-    if(gab == 3 || gab == 4 || gab == 6 || gab == 8) {
+    if(gab == 3 || gab == 4 || gab == 6 || gab == 8 || gab == 11 || gab == 12 || gab == 16 || gab == 17 || gab == 18 || gab == 20 || gab == 25) {
         correct = correct + 1;
     }
     document.getElementById("clearGabor" + gab).style.display = "none";
     gab = gab + 1;
-    if(gab >= 11) {
+    if(gab >= 26) {
         endExperiment();
     }
     else {
@@ -47,5 +47,5 @@ function endExperiment() {
     document.getElementById("ccw").style.display = "none";
     document.getElementById("directions").style.display = "none";
     document.getElementById("finalScore").style.display = "block";
-    document.getElementById("finalScore").innerHTML = "You got " + (correct/9)*100 + "% correct";
+    document.getElementById("finalScore").innerHTML = "You got " + (correct/24)*100 + "% correct";
 }
